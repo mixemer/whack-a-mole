@@ -4,6 +4,7 @@ html {
   font-size: 10px;
   --background: #ffc600;
   background: white;
+  cursor: url("Hammer.png"), auto; /*cursor added to the website*/
 }
 
 *,

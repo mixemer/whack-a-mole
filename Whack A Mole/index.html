@@ -3,40 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Whack A Professor!</title>
-  <!--title>Whack An apple!</title-->
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Whack-a-Professor! <span class="score">0</span></h1>
-  <!--h1>Whack-an-apple! <span class="score">0</span></h1-->
+  <!--display the game name and the start out score next to it-->
+  <h1>Whack-a-Professor!<span class="gameName"></span></h1>
+  <h1>Time: <span class="time">0</span></h1>
+  <h1>Score: <span class="score">0</span></h1>
+  
 
   <br/>
   <br/>
 
-  <div class="center">  	
-  	<button onClick="startGame()">Start!</button>
+  <div class="playButton">  	
+    <!--call the startGame() function in JS-->
+  	<button onClick="startGame()">Play</button>
   </div>
 
   <div class="game">
     <div class="hole hole1">
-      <div class="mole"></div>
+      <div class="professor"></div>
     </div>
     <div class="hole hole2">
-      <div class="mole"></div>
+      <div class="professor"></div>
     </div>
     <div class="hole hole3">
-      <div class="mole"></div>
+      <div class="professor"></div>
     </div>
     <div class="hole hole4">
-      <div class="mole"></div>
+      <div class="professor"></div>
     </div>
     <div class="hole hole5">
-      <div class="mole"></div>
+      <div class="professor"></div>
     </div>
     <div class="hole hole6">
-      <div class="mole"></div>
+      <div class="professor"></div>
+    </div>
+    <div class="hole hole7">
+      <div class="professor"></div>
+    </div>
+    <div class="hole hole8">
+      <div class="professor"></div>
+    </div>
+    <div class="hole hole9">
+      <div class="professor"></div>
     </div>
   </div>
 

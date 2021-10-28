@@ -1,100 +1,90 @@
-/*Color of the website background*/
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-  --background: #ffc600;
-  background: white;
-  cursor: url("Hammer.png"), auto; /*cursor added to the website*/
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/*Font of hte title*/
-body {
-  padding: 0;
+* {
   margin: 0;
-  /*font was Amatic SC*/
-  font-size: 10px;
-  font-family: "Times New Roman", cursive;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-/*Design of all h1*/
-h1 {
-  text-align: center;
-
-  font-size: 8rem;
-  line-height: 0.2;
-  margin-bottom: 0;
-}
-
-.gameName {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0 3rem;
-  /*line-height: 0;*/
-  border-radius: 1rem;
-}
-
-.time {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0 3rem;
-  /*line-height: 0;*/
-  border-radius: 1rem;
-}
-.score {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0 3rem;
-  /*line-height: 0;*/
-  border-radius: 1rem;
-}
-
-.game {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.hole {
-  flex: 1 0 33.33%;
-  overflow: hidden;
-  position: relative;
-}
-
-.hole:after {
-  display: block;
-  background: url(monitor2.png) bottom center no-repeat;
-  background-size: contain;
-  content: "";
+/*The background of the website*/
+.container {
   width: 100%;
-  height: 170px;
-  position: center;
-  z-index: -1;
-  bottom: -30px;
+  height: 100%;
+  background-image: url(mainmenu/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
 }
 
-/*Professor*/
-.professor {
-  background: url("professor2.jpg") bottom center no-repeat;
-  background-size: 39%; /*Change the size of the professor*/
-  position: absolute;
-  object-position: top;
-  top: 100%; /*change the position the image start from*/
-  width: 100%;
-  height: 70%;
-  transition: all 0.2s;
-}
-
-.hole.up .professor {
-  top: 0;
-}
-
-.playButton {
+/*Nav bar on top*/
+.navbar {
+  height: 12%;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.classLogo {
+  width: 100px;
+  cursor: pointer;
+}
+
+/*move all text to the right. text like home, game, bug, and specs*/
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  /*Make the choice from left to right*/
+  display: inline-block;
+  /*Put some space between them to the left*/
+  margin-left: 60px;
+}
+
+nav ul li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+/*Design of the words in the middle*/
+.row {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  height: 80%;
+  align-items: center;
+  justify-content: left;
+}
+
+/*Foucs on the design and position of the paragraph 
+and the phase "group one"*/
+.word {
+  flex-basis: 50%;
+}
+
+/*The members button*/
+.Memberbutton {
+  width: 180px;
+  /*word color*/
+  color: black;
+  background: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+  /*The hover effect when going back*/
+  box-shadow: inset 0 0 0 0 gray;
+  /*the sliding affect*/
+  transition: ease-out 0.5s;
+}
+
+.Memberbutton:hover {
+  /*hover effect when going from left to right*/
+  box-shadow: inset 300px 0 0 0 gray;
 }

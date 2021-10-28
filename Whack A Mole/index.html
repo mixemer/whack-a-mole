@@ -1,58 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Whack A Professor!</title>
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <!--Websites name-->
+    <title>Group One Project</title>
+    <link rel="stylesheet" href="style.css">  
 </head>
 
 <body>
-
-  <!--display the game name and the start out score next to it-->
-  <h1>Whack-a-Professor!<span class="gameName"></span></h1>
-  <h1>Time: <span class="time">0</span></h1>
-  <h1>Score: <span class="score">0</span></h1>
-  
-
-  <br/>
-  <br/>
-
-  <div class="playButton">  	
-    <!--call the startGame() function in JS-->
-  	<button onClick="startGame()">Play</button>
-  </div>
-
-  <div class="game">
-    <div class="hole hole1">
-      <div class="professor"></div>
+    <div class="container">
+        <div class="navbar">
+            <!--The class logo-->
+            <img src="mainmenu/Logo2.png" class="classLogo">
+            <nav>
+                <ul>
+                    <!--These are the button to another page-->
+                    <li><a href="">HOME</a></li>
+                    <li><a href="game.html">GAME</a></li>
+                    <li><a href="">BUG</a></li>
+                    <li><a href="">SPECS</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="row">
+            <div class="word">
+                <h1>Group One</h1>
+                <p>A class project to develop a whack a mole game in HTML, CSS, and javascript with 
+                    a team of around 15 people divided into 4 groups 
+                    (backbone, graphics, QA and specs).</p>    
+                <button class="Memberbutton">Members</button>    
+            </div>
+        </div>
     </div>
-    <div class="hole hole2">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole3">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole4">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole5">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole6">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole7">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole8">
-      <div class="professor"></div>
-    </div>
-    <div class="hole hole9">
-      <div class="professor"></div>
-    </div>
-  </div>
-
-  <script src='wackAmole.js'></script>
 </body>
 </html>

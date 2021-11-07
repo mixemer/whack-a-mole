@@ -67,7 +67,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url(gameImage/monitor2.png) bottom center no-repeat;
+  background: url(gameImage/desk_temp.png) bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -79,13 +79,13 @@ h1 {
 
 /*Professor*/
 .professor {
-  background: url(gameImage/professor2.jpg) bottom center no-repeat;
-  background-size: 39%; /*Change the size of the professor*/
+  background: url(gameImage/prof_temp.png) bottom center no-repeat;
+  background-size: 50%; /*Change the size of the professor*/
   position: absolute;
   object-position: top;
   top: 100%; /*change the position the image start from*/
   width: 100%;
-  height: 70%;
+  height: 55%;
   transition: all 0.2s;
 }
 

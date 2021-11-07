@@ -25,7 +25,7 @@
 
   function peep() { // here is probably where the code begin 
     tick();
-    const time = randomTime(1000, 1000); // I think this change the pop up speed.
+    const time = randomTime(1000, 1000); // this change the pop up speed.
     const hole = randomHole(holes);
     hole.classList.add('up'); // creating a class list on hole and added up to it. up is in the css.
     setTimeout(() => {

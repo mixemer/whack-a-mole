@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   background: white;
-  cursor: url(gameImage/Hammer.png), auto; /*cursor added to the website*/
+  cursor: auto; /*cursor added to the website*/
 }
 
 *,
@@ -24,7 +24,7 @@ body {
 /*Design of all h1*/
 h1 {
   text-align: center;
-  font-family: 'Reenie Beanie', cursive;
+  font-family: "Reenie Beanie", cursive;
   font-size: 8rem;
   line-height: 0.2;
   margin-bottom: 10;
@@ -44,7 +44,6 @@ h1 {
   border-radius: 1rem;
 }
 .score {
-
   padding: 0 3rem;
   /*line-height: 0;*/
   border-radius: 1rem;
@@ -66,7 +65,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url(gameImage/desk_temp.png) bottom center no-repeat;
+  background: url(gameImage/desk-01.svg) bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -78,7 +77,7 @@ h1 {
 
 /*Professor*/
 .professor {
-  background: url(gameImage/prof_temp.png) bottom center no-repeat;
+  background: url(gameImage/prof-01.svg) bottom center no-repeat;
   background-size: 50%; /*Change the size of the professor*/
   position: absolute;
   object-position: top;
@@ -96,16 +95,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 a {
   float: right;
   width: auto;
   font-size: large;
-
 }
 
-.top{
+.top {
   background-image: url(gameImage/concept_art1ver2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;

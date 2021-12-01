@@ -2,7 +2,11 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: white;
+  background-image: url(gameImage/campus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   cursor: auto; /*cursor added to the website*/
 }
 
@@ -51,7 +55,9 @@ h1 {
 
 .game {
   width: 600px;
-  height: 400px;
+  height: 510px;
+  background-color: green;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;

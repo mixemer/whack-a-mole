@@ -10,6 +10,7 @@ let timeUp;
 let score;
 let timeCount;
 let timeAmount = 10000;
+var play = false;
 
 //Function to give a random time to show the image
 function randomTime(min, max) {
@@ -44,7 +45,8 @@ function peep() {
   setTimeout(() => {
     hole.classList.remove("up");
     //timeCount = timeUp;
-    if (!timeUp) peep();
+    if (!timeUp) peep(); // When time is not up, it will call the peep() method again.
+    if (timeUp) play = false; // When the time is up, play will turn back to false.
   }, time); // when the time is reach, the professor will pop back in.
 }
 
@@ -55,13 +57,19 @@ when the time is up.
 
 function startGame() {
   // this code start first.
-  timeCount = timeAmount / 1000;
-  //timer.textContent = timeCount; // display the time.
-  scoreBoard.textContent = 0; // score will display 0.
-  timeUp = false; // time will be false up time is over.
-  score = 0; // score start from 0.
-  peep(); // call the peep() function.
-  setTimeout(() => (timeUp = true), timeAmount); // This change the length of the game.
+  if(play == true) { // This if statement is to prevent the click of play button more than once.
+    console.log("You are playing the game right now!");
+  }
+  if(play == false) {
+    play = true; // change the play to true, when the player press play.
+    timeCount = timeAmount / 1000;
+    //timer.textContent = timeCount; // display the time.
+    scoreBoard.textContent = 0; // score will display 0.
+    timeUp = false; // time will be false up until time is over.
+    score = 0; // score start from 0.
+    peep(); // call the peep() function.
+    setTimeout(() => (timeUp = true), timeAmount); // This change the length of the game.
+  }
 }
 
 

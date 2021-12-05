@@ -129,3 +129,30 @@ and the phase "group one"*/
   font-size: 20px;
   cursor: pointer;
 }
+
+._header {
+  color: white;
+  font-size: 20px;
+  position: static;
+  z-index: 999;
+  padding-bottom: 20px;
+}
+._content{
+  color: white;
+  font-size: 20px;
+  position: static;
+  z-index:99;
+  background-color: rgba(73,43,207, 0.9);
+  border-radius: 25px;
+  padding: 20px;
+}
+._content h3{
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+div + div{
+  margin-bottom:10px;
+}
+._content ul {
+  padding-left: 10px;
+}

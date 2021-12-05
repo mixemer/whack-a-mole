@@ -15,3 +15,5 @@ a class project to develop a whack a mole game in javascript with a team of arou
 // Nov 30, 2021 Qi Da Chen added more names to the member list. I was told that there was a bug where if the player press the play button multiple times, the time will go down faster (even reach the negative) and the multiple professor will pop out at the same time. The reason this is happening is that the program doesn't know that we are currently playing the game so it will run games on top of games. To fix that bug, I added a boolean called "play". If play was press once, the play boolean will turn true. If play is true and the player press play again, the game won't do the bug that I was told about because now it knows that the game is currently being played. In game.css, I made the background Brooklyn College campus and the game background green.
 
 // Dec 5, 2021 Qi Da Che(AnbuCap) made some changed to the look of the game. Added sound effect and music to the game. Make the cursor turn to a hammer when the play button is pressed.
+
+// Dec 5, 2021 Abdullah adding some test cases for the game and working on svn repo. 

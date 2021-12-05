@@ -51,9 +51,8 @@ This peep function is to control the speed and timeframes of the image
 to show in each hole. The numbers are big because it counts in millisecond
 */
 function peep() {
-  tick();
   let hole;
-  const time = randomTime(1000, 1000);
+  const time = randomTime(100, 1000);
   const holeAmount = randAmount(1,3); // call randAmount function to generate an amount of hole.
   for(let i =0; i < holeAmount; i++) { // for loop for the amount of hole.
     hole = randomHole(holes); // decide which hole will pop up
@@ -85,6 +84,7 @@ when the time is up.
 
 function startGame() {
   music.play();
+  tick();
   // this code start first.
   if(play == true) { // This if statement is to prevent the click of play button more than once.
     console.log("You are playing the game right now!");
@@ -120,8 +120,15 @@ function bonk(e) {
 }
 
 function tick() {
-  timeCount--;
-  timer.textContent = timeCount;
+  setTimeout(() => {
+    timeCount--;
+    timer.textContent = timeCount;
+    if(timeCount == 0){
+      clearTimeout();
+    }else{
+      tick();
+    }
+  },1000)
 }
 
 professors.forEach((professor) => professor.addEventListener("click", bonk));

@@ -17,3 +17,5 @@ a class project to develop a whack a mole game in javascript with a team of arou
 // Dec 5, 2021 Qi Da Che(AnbuCap) made some changed to the look of the game. Added sound effect and music to the game. Make the cursor turn to a hammer when the play button is pressed.
 
 // Dec 5, 2021 Abdullah adding some test cases for the game and working on svn repo. 
+
+// Dec 5, 2021 Lu Yang Wu improved and moved the tick() function from peep() to call from startGame(). Issues that countdown was not able to stop(if moved) and game speed follows peep() function are now fixed. Please change the number in peep()-> const time= randomTime(from min milli-sec, to max milli-sec) to test the game if needed. I changed to (100,1000) now instead of (1000,1000) originally.

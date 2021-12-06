@@ -110,6 +110,7 @@ h1 {
   top: 100%; /*change the position the image start from*/
   width: 100%;
   height: 55%;
+  z-index: 2;
   transition: all 0.2s;
 }
 
@@ -117,7 +118,7 @@ h1 {
   top: 0;
 }
 
-.hole.up2 .professor2 {
+.hole.up2 #professor2 {
   top: 0;
 }
 

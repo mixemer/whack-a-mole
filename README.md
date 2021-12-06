@@ -19,3 +19,23 @@ a class project to develop a whack a mole game in javascript with a team of arou
 // Dec 5, 2021 Abdullah adding some test cases for the game and working on svn repo. 
 
 // Dec 5, 2021 Lu Yang Wu improved and moved the tick() function from peep() to call from startGame(). Issues that countdown was not able to stop(if moved) and game speed follows peep() function are now fixed. Please change the number in peep()-> const time= randomTime(from min milli-sec, to max milli-sec) to test the game if needed. I changed to (100,1000) now instead of (1000,1000) originally.
+
+// Dec 5, 2021 test case:
+Time starts on start click: Passed
+When prof is hit points should increase: Passed
+The game is working together perfectly. The timer starts when the end-user clicks start. The timer starts at 19 seconds. When the timer starts the professors start to randomly appear. If the professor is click on correctly then the user will be awarded 10 points. If the user clicks on the wrong desk then they will not be awarded 10 points. 
+
+// Dec 5, Please see below the steps to get the whack-a-mole repo using svn. 
+
+1. go on your desktop and get the GitHub repo using svn using this: svn co --depth empty https://github.com/mixemer/whack-a-mole.git
+2. It will create a folder named whack-a-mole. git (it might be a different name-check it on your desktop)
+cd into the folder using: cd whack-a-mole. git
+4. once you are inside the folder type this: svn up the trunk (this will download the GitHub repo into the folder and create a new folder colled trunk that has the files)
+5. type this to get all the log: svn log
+
+// Dec 5, the steps to commit and update using the svn repo. 
+
+commit: svn commit -m "your commit comment here"
+update: svn update.
+
+* Please update your svn repo regularly so that you can get all the latest logs. 

@@ -8,6 +8,8 @@ a class project to develop a whack a mole game in javascript with a team of arou
 
 //Nov 2, 2021 Perry Chen Spec Sheet - Incomplete/Template https://docs.google.com/document/d/1MZgJTXujNsg6eqlLFC_2V_HX-z8Qovzn/edit?usp=sharing&ouid=100119458935047973200&rtpof=true&sd=true
 
+// Nov 20, 2021 Mehmet Sahin Test Plan Document - https://docs.google.com/document/d/1qWE6GnzAjX0hHLrsskTGYNvJzzR5K9Y4eGwBn6iHHmI/edit?usp=sharing
+
 //Nov 7, 2021 Qi Da Chen Added a pop up box in the home page, with the groups and some members. The pop up box is control by home.js. There is a function for the member button and the X button on the box. Changed the hole image and profesosr image to the art graphic made. Apparently html need to have "!DOCTYPE html" so the browser will know what type of document type to expect. When I added that, the home page got messed up, so I made some changed to index.html and style.css. I also moved the images the graphic did to the gameImage folder so it's easier for backbone to look for the images.
 
 //Nov 7, 2021 Lu Yang Wu Cleaned mistakes in CSS and rewrote some comments in .JS file. Changed game page font and top background picture. Couldn't go further with JS due to heavy study and job issues. But mmultiple moles/professor issue could be solve by array with random function. Will see in future.

@@ -121,8 +121,10 @@ function bonk(e) {
 
 function tick() {
   setTimeout(() => {
+    if(timeCount > 0){
     timeCount--;
     timer.textContent = timeCount;
+    }
     if(timeCount <= 0){
       clearTimeout();
     }else{

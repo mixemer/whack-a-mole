@@ -15,7 +15,7 @@ let timeCount;
 let timeAmount = 20000;
 var play = false;
 let hit = new Audio("./audio/Bat_hit.wav");
-let music = new Audio("./audio/GameMusic.zip");
+let music = new Audio("./audio/GameMusic.mp3");
 let ouch = new Audio("./audio/ouch.mp3");
 
 function randChar(min, max) {
@@ -36,8 +36,8 @@ using a random gen to get a random hole.
 creating array for the holes. 1 - 9
 */
 function randomHole(holes) {
-  const idx = Math.floor(Math.random() * holes.length); 
-  const hole = holes[idx]; 
+  const idx = Math.floor(Math.random() * holes.length);
+  const hole = holes[idx];
   // if the hole is the same as the previews holes, this if will run.
   if (hole === lastHole) {
     return randomHole(holes);
@@ -60,7 +60,7 @@ function peep() {
     hole.classList.add("up"); // creating a class list on hole and added up to it. up is in the css.\
   }
  // document.getElementsByClassName("professor").game.zIndex = "2";
-  setTimeout(() => { 
+  setTimeout(() => {
     for(let i =0; i < holeUp.length; i++) {
       hole = holeUp[i];
       hole.classList.remove("up"); // remove up so go down
@@ -105,11 +105,11 @@ function startGame() {
 
 /*
 This bonk is to control the score counter when you hit a professor.
-if isTrusted is used to prevent other use JS to fake 
+if isTrusted is used to prevent other use JS to fake
 the game in order to win, not too necessary.
 */
 function bonk(e) {
-  if (!e.isTrusted) return;  
+  if (!e.isTrusted) return;
   hit.play();
   ouch.play();
   hit.currentTime = 0;

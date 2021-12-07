@@ -47,3 +47,14 @@ update: svn update.
 - fixed the music issue, file was still zipped
 
 // Dec 7, 2021 testing svn commit from terminal
+
+// Dec 7, 2021 How to commit with svn and genarte token
+
+1. Make sure that your repository is in sync with the main branch.
+2. Go to GitHub > settings > developer settings > Personal access tokens
+3. Enter your Github account password and enter.
+4. click on the repo check box to get access to the entire repo and choose the time you want.
+5. click generate the token and copy the token. 
+6. Open your svn repository in your laptop's terminal. 
+7. to commit please type: svn commit -m "comment" and then when you are asked for a password insert the token copied from Github. 
+

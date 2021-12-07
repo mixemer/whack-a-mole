@@ -48,7 +48,7 @@ update: svn update.
 
 // Dec 7, 2021 testing svn commit from terminal
 
-// Dec 7, 2021 How to commit with svn and genarte token
+// Dec 7, 2021 How to commit with svn and generate token
 
 1. Make sure that your repository is in sync with the main branch.
 2. Go to GitHub > settings > developer settings > Personal access tokens

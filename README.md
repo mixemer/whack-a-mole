@@ -45,3 +45,5 @@ update: svn update.
 // Dec 7, 2021,
 - updated the specs.html file and removed the .docx that isnt used anymore.
 - fixed the music issue, file was still zipped
+
+// Dec 7, 2021 testing svn commit from terminal

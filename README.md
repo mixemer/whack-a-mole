@@ -42,4 +42,6 @@ update: svn update.
 
 // Dec 6, 2021 Sebastian Stephenson tested the score counter of the game. Clicks were applied on different areas in the game to see if the counter would rise or not. The score didn't rise when the clicks weren't applied to the moles on every attempt. 
 
-// Dec 7, 2021, updated the specs.html file and removed the .docx that isnt used anymore.
+// Dec 7, 2021,
+- updated the specs.html file and removed the .docx that isnt used anymore.
+- fixed the music issue, file was still zipped

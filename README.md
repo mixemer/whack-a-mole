@@ -58,3 +58,4 @@ update: svn update.
 6. Open your svn repository in your laptop's terminal. 
 7. to commit please type: svn commit -m "comment" and then when you are asked for a password insert the token copied from Github. 
 
+//Dec 7th, 2021 Found a bug that occurs when you press play multiple times and then click on the professors the score doesnt change.

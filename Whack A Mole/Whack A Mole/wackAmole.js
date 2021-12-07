@@ -123,7 +123,7 @@ function tick() {
   setTimeout(() => {
     timeCount--;
     timer.textContent = timeCount;
-    if(timeCount == 0){
+    if(timeCount <= 0){
       clearTimeout();
     }else{
       tick();

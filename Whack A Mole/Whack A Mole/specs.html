@@ -25,27 +25,69 @@
         <h1>Software Requirements Specification</h1>
         <p>for Whack-a-Professor by Group 1 CISC 3140</p>
     </div>
+
     <div class="_content">
-        <h2>1 Introduction</h2>
+        <h2><u>Contents</u></h2>
+        <h3>1 Introduction</h3>
+        <p>
+            1.1 Document Purpose <br>
+            1.2 Product Scope <br>
+            1.3 Intended Audience and Document Overview <br>
+            1.4 Defintions, Acronyms and Abbreviations 
+        </p>
+        <br>
+        <h3>2 Overall Description</h3>
+        <P>
+            2.1 Product Overview <br>
+            2.2 Product Functionality <br>
+            2.3 Design and Implementation Constraints 
+        </P>
+        <br>
+        <h3>3 Specific Requirements</h3>
+        <p>
+            3.1 External Interface Requirements <br>
+            3.2 User Interfaces
+        </p>
+       
+    </div>
+
+    <div class="_content">
+        <h2><u>1 Introduction</u></h2>
         <h3>1.1 Purpose</h3>
         <p>
             The purpose of this page is to provide an overall description
-            and understanding of the CISC 3140 project, Whack-a-Prof. This
-            page will list all the specifications of the project to include
-            font and font size, the game features, baseline requirements, and graphics.
+            and understanding of the CISC 3140 project, <br>
+            Whack-a-Professor. This document will list the specifications of the project such as game features, baseline requirements,
+            and graphics.
         </p>
         <h3>1.2 Product Scope</h3>
         <p>
-            The Whack-a-Prof software is a game designed in Javascript
-            for the CISC 3140 course project.
+            The Whack-a-Professor software is a game designed in JavaScript, CSS and html for the CISC 3140 course project. 
+            The game page consists of a countdown timer of 20 seconds, a score which accumulates in increments of 10 points.  
+            A play button to start the game and 6 individual desks where the professors pop up.  
+            The objective of the game is to hit the professors with a mallet in order to accumulate points.
         </p>
-        <h3>1.3 Definitions, Acronyms and Abbreviations</h3>
+        <h3>1.3 Intended Audience and Document Overview </h3>
         <p>
-            In this document, User and Player refers to the end-user and intended audience.
+            Whack-a-Prof is intended for clients who would like a enjoy an online interactive game and 
+            for Professor Murray Gross to evaluate the work of class 3140-ET6 Group 1, 
+            which consists of a backbone team, a graphics team, a quality assurance team and a specifications team.
+        </p>
+        <h3>1.4 Defintions, Acronyms and Abbreviations</h3>
+        <p>
+            <ul>
+                <li>JavaScript - an object-oriented computer programming language commonly used to create interactive effects within web browsers.</li>
+                <li>CSS (Cascading Style Sheets) - is a computer language for laying out and structuring web pages. </li>
+                <li>HTML (Hypertext Markup Language) - a standardized system for tagging text files to achieve font, color, graphic, <br>
+                    and hyperlink effects on World Wide Web pages.</li>
+                <li>End users - users whom the intended product is designed for.</li>
+            </ul>
         </p>
     </div>
+
+    <!---------------------------------------------------------------------------------------------------->
     <div class="_content">
-        <h2>2 Overall Description</h2>
+        <h2><u>2 Overall Description</u></h2>
         <h3>2.1 Product Overview</h3>
         <p>
             Whack-a-Prof is a standalone software that is a variation on the traditional
@@ -53,36 +95,48 @@
             Javascript. The game is in a 3 by 3 grid arrangement where the Professor will
             pop up on the screens in which the user will then have to click on the Professor
             to “whack” him.
-            <br><br>
-            The Player has only 20 seconds to get as high of a score as possible with the mallet which the Player controls with the mouse.<br>
+            The Player has only 20 seconds to get as high of a score as possible with the mallet which the Player controls with the mouse.
             The Professor pops up randomly and the score counter increases by 10 points when
             the Professor is hit. <br>
         </p>
         <h3>2.2 Product Functionality</h3>
         <p>
             <ul>
-                <li>Simple Whack-a-Mole style game with timer</li>
+                <li>End users are users whom the intended product is designed for.</li>
                 <li>Professors pop up at random intervals </li>
                 <li>User must use mouse cursor to “hit” the Professors</li>
-                <li>User will gain points per successful hit.</li>
-                <li>Game must have sound effects to let User
-                    know whether the hit was successful or not.</li>
+                <li>User will gain 10 points per successful hit.</li>
+                <li>There are sound effects to let the end user know whether the hit was successful or not.</li>
             </ul>
         </p>
         <h3>
             2.3 Design and Implementation Constraints
         </h3>
         <p>
-            The Whack-a-Prof should be designed to run in any web browser, to include mobile browsers.
-             The game has to be written in vanilla Javascript and CSS. <br>
-             Images must be in SVG format to maintain resolution independence and transparency.
-             Audio files must be in either MP3 or WAV format.
+            The Whack-a-Prof is designed to run in any PC web browser, 
+            the game is not designed to work properly on mobile devices such as cellphones and tablets.  
+            The game has been restricted to the languages of vanilla JavaScript, CSS and html. 
+            Images are conveyed in SVG format to maintain resolution independence.
         </p>
        </div>
+
+       <!--------------------------------------------------------------------------->
        <div class="_content">
-           <h2>3 Specific Requirements</h2>
+           <h2><u>3 Specific Requirements</u></h2>
            <h3>3.1 External Interface Requirements</h3>
-           <h3>3.1.1 User Interfaces </h3>
+           <p>
+            The external requirement for the game is any PC or desktop browser. 
+            Than the window screen with a Font size of 8 REM has a 3 by 3 grid of holes with a 20 sec timer. 
+            Once the user is on the game page the game will begin upon clicking the "Play" button and the 20 sec timer will begin, and the music will start playing. 
+            The program will then add a target into the 3 by 3 holes, which is the “Professor”. 
+            The User must use the mouse or touchscreen to click on the Professor and in order to accumulate points which are incremented in values of 10 points per hit. 
+            Once you hit the professor, the program than plays a sound effect to show you have hit the professor and earned your points. 
+            If you missed the professor than no music or point will be added. The program than allows the user to try again until the timer ends. 
+            Also while you keep playing the program keeps track of your score.
+           </p>
+           <br>
+           <img src="/whack-a-mole/Whack A Mole/Whack A Mole/gameImage/gameInterface.png" class="center">
+           <h3>3.2 User Interfaces </h3>
            <p>Start Screen:
             The game can only begin when User presses the “Play” button.
             Upon clicking “Play”, the game begins and the timer starts counting down.
@@ -92,12 +146,8 @@
             The game is over when timer reaches 0 at which the timer will stop and no Professor will appear on the screen. The music will also stop playing when the timer reaches 0.
             The final score is displayed and the Player will have the chance to play again.
            </p>
-           <h3>3.1.2 Hardware Requirements</h3>
-           <p>
-             The game is intended to run in a web browser and should be able to run on most devices that support modern browsers to include desktops, laptops, tablets, and mobile devices.
-             In order to play the game, the user must have at least a mouse or touch screen, where applicable.
-           </p>
        </div>
+
 
        <div class="_content">
            <h3>CISC 3140</h3>
@@ -107,6 +157,7 @@
                    <li>Mehdi Majumder</li>
                    <li>Perry Chen</li>
                    <li>Mohammad Alam</li>
+                   <li>Darwyn Abreu</li>
                <br> <li>HTML version created by Bryan Sanchez</li>
                </ul>
            </p>

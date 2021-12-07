@@ -52,7 +52,7 @@ to show in each hole. The numbers are big because it counts in millisecond
 */
 function peep() {
   let hole;
-  const time = randomTime(100, 1000);
+  const time = randomTime(800, 1000);
   const holeAmount = randAmount(1,3); // call randAmount function to generate an amount of hole.
   for(let i =0; i < holeAmount; i++) { // for loop for the amount of hole.
     hole = randomHole(holes); // decide which hole will pop up

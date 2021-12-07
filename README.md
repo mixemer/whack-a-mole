@@ -39,3 +39,5 @@ commit: svn commit -m "your commit comment here"
 update: svn update.
 
 * Please update your svn repo regularly so that you can get all the latest logs. 
+
+// Dec 6, 2021 Sebastian Stephenson tested the score counter of the game. Clicks were applied on different areas in the game to see if the counter would rise or not. The score didn't rise when the clicks weren't applied to the moles on every attempt. 

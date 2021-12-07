@@ -84,12 +84,12 @@ when the time is up.
 
 function startGame() {
   music.play();
-  tick();
   // this code start first.
   if(play == true) { // This if statement is to prevent the click of play button more than once.
     console.log("You are playing the game right now!");
   }
   if(play == false) {
+    tick();
     document.querySelector('.game').style.cursor = "url(gameImage/hammer_sprite.png), pointer";
     play = true; // change the play to true, when the player press play.
     timeCount = timeAmount / 1000;

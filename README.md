@@ -61,3 +61,9 @@ update: svn update.
 7. to commit please type: svn commit -m "comment" and then when you are asked for a password insert the token copied from Github. 
 
 //Dec 7th, 2021 Found a bug that occurs when you press play multiple times and then click on the professors the score doesnt change.
+
+Dec 7th, here is the Github pages url.
+
+Project is live!!
+
+https://mixemer.github.io/whack-a-mole/Whack%20A%20Mole/Whack%20A%20Mole/game.html
